@@ -1,0 +1,80 @@
+body {
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+  }
+
+span {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    /* padding: 6px; */
+}
+
+span > a {
+    font-size: larger;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 6px;
+    text-decoration: none;
+    
+}
+
+.container{
+    /* background-color: blue; */
+    background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%);
+    /* background: linear-gradient(45deg, #f2f9fe 0%,#d6f0fd 100%); */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* margin: 20px; */
+    padding: 0%;
+}
+
+.logo {
+    width: 10px;
+}
+
+.logo img {
+    max-width: 350px;
+}
+
+.container > .links {
+    /* background-color: red; */
+    align-content: center;
+}
+
+.container > .links > a {
+    padding: 6px;
+    text-decoration: none;
+    font-weight:bold
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.splash {
+    position: relative;
+    display: block;
+}
+
+.overlay-text {
+    color: white;
+    position: absolute;
+    top: 10px;
+    padding: 0%;
+    margin: 0%;
+    font-size:350%;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
