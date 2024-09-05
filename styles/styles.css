@@ -27,7 +27,7 @@ span > a {
     justify-content: space-between;
     align-content: center;
     /* margin: 20px; */
-    padding: 0%;
+    padding: 0px 20px 0px 20px;
 }
 
 .logo {
@@ -41,22 +41,34 @@ span > a {
 .container > .links {
     /* background-color: red; */
     align-content: center;
+    /* padding-right: 20px; */
 }
 
 .container > .links > a {
     padding: 6px;
     text-decoration: none;
-    font-weight:bold
+    font-weight:bold;
+    color: darkblue;
 }
 
 main {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
+.splashAlignment {
+    display: flex;
+    justify-content: center;
+    /* max-width: ; */
+}
+
+
 .splash {
+    /* display: block; */
+    display: flex;
     position: relative;
-    display: block;
+    /* max-width: 1vh; */
+    
 }
 
 .overlay-text {
@@ -74,7 +86,21 @@ main {
     100% {opacity: 1;}
 }
 
+.pitch {
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+
+}
+
+
 footer {
     display: flex;
     justify-content: center;
+}
+
+
+
+footer a {
+    display: flex;
 }
