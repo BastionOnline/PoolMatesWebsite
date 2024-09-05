@@ -111,8 +111,13 @@ footer a {
         justify-content: center;
     }
 
+    .logo {
+        /* padding-bottom: 120px; */
+        z-index: 10;
+    }
+
     .links {
-        padding-top: 100px;
+        padding-top: 120px;
         font-size: 15px;
         /* display: flex; */
         /* justify-content: center; */
