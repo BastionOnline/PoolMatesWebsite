@@ -113,12 +113,12 @@ h3, h4 {
     padding: 0;
 }
 
-.links {
+.retails {
     display: flex;
     justify-content: center;
 }
 
-.links .retailLocations {
+.retails .retailLocations {
     padding: 30px;
 }
 
