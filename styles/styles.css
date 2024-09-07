@@ -52,6 +52,7 @@ span > a {
 }
 
 main {
+    text-align: center;
     /* display: flex; */
     /* justify-content: center; */
 }
@@ -95,14 +96,34 @@ main {
 
 
 footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    /* display: inline; */
+    /* justify-content: center; */
 }
 
 
 
 footer a {
+    text-align: center;
+    /* display: flex; */
+}
+
+h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.links {
     display: flex;
+    justify-content: center;
+}
+
+.links .retailLocations {
+    padding: 30px;
+}
+
+.sitemap {
+    padding: 20px;
 }
 
 @media (max-width: 1000px) {
