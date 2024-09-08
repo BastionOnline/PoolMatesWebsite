@@ -62,6 +62,7 @@ main {
 
 
 .splashAlignment {
+    
     display: flex;
     justify-content: center;
 }
@@ -87,12 +88,14 @@ main {
 .overlay-text {
     color: white;
     position: absolute;
-    
+    padding-top: 75px;
     /* top: 10px; */
-    padding: 0%;
+    /* padding: 0%; */
     margin: 0%;
     font-size:350%;
     animation: fadeIn 2s;
+    /* animation: slide 2s; */
+
 }
 
 
@@ -110,9 +113,30 @@ main {
     /* text-shadow: 4px 4px 4px rgb(0, 0, 10); Horizontal offset, vertical offset, blur radius, color */
 }
 
+.overlay-text a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounded corners */
+    letter-spacing: 1px;
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Keep it inline and allow padding/margin */
+    font-family: Arial, sans-serif; /* Font family */
+    outline: none; /* Removes the grey outline */
+    background-color:#002076;
+}
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 
@@ -140,7 +164,12 @@ main {
 
 
 footer {
+
     text-align: center;
+    margin-top: 30px;
+    background-color: #00103c;
+    color: white;
+    font-size: 1.1rem;
     /* display: inline; */
     /* justify-content: center; */
 }
@@ -149,8 +178,10 @@ footer {
 
 footer a {
     text-align: center;
+    font-size: .9em;
     /* display: flex; */
     text-decoration: none;
+    color: #0077B5;
 }
 
 h3, h4 {
@@ -158,13 +189,34 @@ h3, h4 {
     padding: 0;
 }
 
+.footerMenu {
+    width: 545px;
+
+}
+
+.visitShare {
+    display: flex;
+    justify-content:space-around;
+}
+
 .retails {
     display: flex;
     justify-content: center;
+    /* padding: 15px; */
+    /* padding-top: 15px; */
+    /* padding-right: 30px; */
 }
 
 .retails .retailLocations {
-    padding: 30px;
+    padding: 0px 15px 0px 15px;
+}
+
+.action {
+    padding: 0px 8px 0px 8px;
+}
+
+.footerMenu h3 {
+    padding: 30px 0px 10px 0px;
 }
 
 .share-links {
@@ -226,8 +278,13 @@ h3, h4 {
 
 
 .sitemap {
-    padding: 20px;
+    padding: 40px 0px 20px 0px;
 }
+
+.sitemap a {
+    padding: 0px 10px 0px 10px;
+}
+
 
 @media (max-width: 1000px) {
     .container {
