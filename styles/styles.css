@@ -1,6 +1,13 @@
-body {
+body, a {
     font-family: Helvetica, Verdana, Arial, sans-serif;
-  }
+    text-decoration: none;
+    /* background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%); */
+    /* background-color: #a0d8ef; */
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 span {
     background-color: white;
@@ -47,12 +54,13 @@ span > a {
 
 .container > .links > a {
     padding: 6px;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-weight:bold;
     color: darkblue;
 }
 
 main {
+    background-color: white;
     text-align: center;
     max-width: 1280px;
     margin: 0 auto;
@@ -62,9 +70,9 @@ main {
 
 
 .splashAlignment {
-    
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 
@@ -139,7 +147,86 @@ main {
     }
 }
 
+.indexServices-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.indexServices ul {
+    padding: 0px 20px 0px 0px;
+    margin: 0px;
+}
+
+.indexServices h2 {
+    font-size: 35px;
+    margin: 0px 0px 10px 0px;
+}
+
+.indexServices h2 {
+    font-size: 35px;
+}
+
+.indexServices ul li{
+    padding-bottom: 5px;
+    list-style: none;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.indexLocations-header h2 {
+    font-size: 35px;
+    margin: 0px 0px 10px 0px;
+}
+
+.indexLocations-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.indexLocations {
+    text-align: left;
+    margin: 0px 15px 0px 15px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.communication {
+    padding-top: 5px;
+}
+
+.communication a {
+    padding: 0px 15px 0px 0px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.indexLocations a {
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.indexLocations a:hover {
+    text-decoration: underline;
+}
+
+.indexLocations h3 {
+    font-size: 1.5em;
+    margin: 0px 0px 5px 0px;
+}
+
+.indexLocations iframe {
+    margin: 0px 0px 10px 0px;
+}
+
+
+.serviceInfo {
+    margin: 30px 0px 30px 0px;
+}
+
+.serviceInfo p, h2 {
+    margin: 0px;
+}
 .response {
     font-size: 25px;
     display: flex;
