@@ -1,6 +1,7 @@
 body, a {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     text-decoration: none;
+    margin: 0px;
     /* background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%); */
     /* background-color: #a0d8ef; */
 }
@@ -84,7 +85,7 @@ main {
 }
 
 .splash .banner {
-    width: 98vw;
+    width: 100vw;
     height: 60vh;
     object-fit: cover;
     object-position: center;
