@@ -1,9 +1,20 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --header-colour:rgb(26, 60, 132);
+    --header-colour-selected:#002076;
+}
+
 body, a {
     font-family: Helvetica, Verdana, Arial, sans-serif;
     text-decoration: none;
     margin: 0px;
     /* background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%); */
     /* background-color: #a0d8ef; */
+    /* background-color: var(--accent-color); */
 }
 
 a:hover {
@@ -57,7 +68,8 @@ span > a {
     padding: 6px;
     /* text-decoration: none; */
     font-weight:bold;
-    color: darkblue;
+    /* color: darkblue; */
+    color: var(--header-colour-selected);
 }
 
 main {
@@ -118,7 +130,8 @@ main {
     margin: 0 auto;
     padding: 0;
     font-size: 40px;
-    color:rgb(26, 60, 132);
+    /* color:rgb(26, 60, 132); */
+    color: var(--header-colour);
     /* text-shadow: 4px 4px 4px rgb(0, 0, 10); Horizontal offset, vertical offset, blur radius, color */
 }
 
@@ -148,6 +161,10 @@ main {
     }
 }
 
+.main-body {
+    padding: 0px 20px 0px 20px
+}
+
 .indexServices-container {
     display: flex;
     justify-content: space-around;
@@ -158,13 +175,15 @@ main {
     margin: 0px;
 }
 
-.indexServices h2 {
-    font-size: 35px;
-    margin: 0px 0px 10px 0px;
+h2, h3, h4 {
+    /* color: var(--header-colour-selected); */
+    color: var(--header-colour);
 }
 
 .indexServices h2 {
     font-size: 35px;
+    margin: 0px 0px 10px 0px;
+    text-align: left;
 }
 
 .indexServices ul li{
@@ -176,7 +195,9 @@ main {
 
 .indexLocations-header h2 {
     font-size: 35px;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 10px 10px;
+    text-align: left;
+    /* color: white; */
 }
 
 .indexLocations-container {
@@ -212,6 +233,7 @@ main {
 }
 
 .indexLocations h3 {
+    color: var(--header-colour);
     font-size: 1.5em;
     margin: 0px 0px 5px 0px;
 }
@@ -228,6 +250,17 @@ main {
 .serviceInfo p, h2 {
     margin: 0px;
 }
+
+
+/* Versions */
+.vr2 {
+    display: none;
+}
+
+/* .vr1 {
+    display: none;
+} */
+
 .response {
     font-size: 25px;
     display: flex;
@@ -252,7 +285,6 @@ main {
 
 
 footer {
-
     text-align: center;
     margin-top: 30px;
     background-color: #00103c;
@@ -275,36 +307,43 @@ footer a {
 h3, h4 {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
-.footerMenu {
-    width: 545px;
-
+.footerMenu.retail-container h3 {
+    /* width: 545px; */
+    text-align: left;
+    padding-left: 15px;
 }
 
 .visitShare {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 
 .retails {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     /* padding: 15px; */
     /* padding-top: 15px; */
     /* padding-right: 30px; */
 }
 
 .retails .retailLocations {
-    padding: 0px 15px 0px 15px;
+    /* padding: 0px 15px 0px 15px; */
+    padding: 15px;
+    text-align: left;
 }
 
 .action {
-    padding: 0px 8px 0px 8px;
+    /* padding: 0px 8px 0px 8px; */
+    padding: 0px 8px 0px 0px;
+
 }
 
 .footerMenu h3 {
     padding: 30px 0px 10px 0px;
+    /* color: white; */
 }
 
 .share-links {
@@ -318,7 +357,7 @@ h3, h4 {
     line-height: .4;
     font-size: 35px;
     padding: 5px 0px 20px 0px;
-    
+    /* color: white; */
 }
 
 .text-share {
