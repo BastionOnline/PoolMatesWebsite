@@ -50,10 +50,9 @@ span > a {
 
 .container{
     /* background-color: var(--header-colour); */
-    background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,var(--header-colour) 100%);
+    /* background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,var(--header-colour) 100%); */
     /* background-color: blue; */
     background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%);
-    
     /* background: linear-gradient(45deg, #f2f9fe 0%,#d6f0fd 100%); */
     display: flex;
     justify-content: space-between;
@@ -85,8 +84,37 @@ span > a {
 }
 
 @media (max-width: 1200px) {
+    .container {
+        display: block;
+        padding-bottom: 10px;
+        /* text-align: center; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
 
+    .links {
+        padding: 0px;
+        font-size: 15px;
+        /* align-items: center; */
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+
+    .container > .links > a {
+        /* display: block; */
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .logo {
+        z-index: 10;
+        width: 50%;
+        margin: 0 auto;
+        width: 250px;
+    }
 }
+
 
 main {
     background-color: white;
@@ -180,6 +208,14 @@ main {
         transform: translateX(0);
     }
 }
+
+
+@media (max-width: 1200px) {
+    main {
+        /* max-width: 1vw; */
+    }
+}
+
 
 .main-body {
     padding: 0px 20px 0px 20px
@@ -497,23 +533,4 @@ h3, h4 {
 
 .sitemap a {
     padding: 0px 10px 0px 10px;
-}
-
-@media (max-width: 1000px) {
-    .container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .logo {
-        /* padding-bottom: 120px; */
-        z-index: 10;
-    }
-
-    .links {
-        padding-top: 120px;
-        font-size: 15px;
-        /* display: flex; */
-        /* justify-content: center; */
-    }
 }
