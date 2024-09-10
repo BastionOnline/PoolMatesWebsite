@@ -15,6 +15,7 @@ body, a {
     /* background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%); */
     /* background-color: #a0d8ef; */
     /* background-color: var(--accent-color); */
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -22,10 +23,11 @@ a:hover {
 }
 
 span {
-    background-color: white;
+    background-color: var(--header-colour);
     display: flex;
     justify-content: center;
-    margin: 5px 0px 5px 0px;
+    /* margin: 5px; */
+    /* margin: 5px 0px 5px 0px; */
     /* width: 100vw; */
     /* padding: 6px; */
 }
@@ -36,18 +38,28 @@ span > a {
     justify-content: space-between;
     padding: 6px;
     text-decoration: none;
-    
+    color: white;
+}
+
+.links a:hover {
+    /* color: var(--primary-color); */
+    /* color:#0bab0b; */
+    /* text-decoration: none; */
+
 }
 
 .container{
+    /* background-color: var(--header-colour); */
+    background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,var(--header-colour) 100%);
     /* background-color: blue; */
     background: linear-gradient(45deg, #feffff 35%,#ddf1f9 85%,#a0d8ef 100%);
+    
     /* background: linear-gradient(45deg, #f2f9fe 0%,#d6f0fd 100%); */
     display: flex;
     justify-content: space-between;
     align-content: center;
     /* margin: 20px; */
-    padding: 0px 20px 0px 20px;
+    padding: 8px 20px 0px 20px;
 }
 
 .logo {
@@ -70,6 +82,10 @@ span > a {
     font-weight:bold;
     /* color: darkblue; */
     color: var(--header-colour-selected);
+}
+
+@media (max-width: 1200px) {
+
 }
 
 main {
@@ -148,6 +164,10 @@ main {
     font-family: Arial, sans-serif; /* Font family */
     outline: none; /* Removes the grey outline */
     background-color:#002076;
+}
+
+.overlay-text a:hover {
+    background-color:#01195c;
 }
 
 @keyframes fadeIn {
@@ -289,7 +309,7 @@ footer {
     margin-top: 30px;
     background-color: #00103c;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     /* display: inline; */
     /* justify-content: center; */
 }
@@ -298,7 +318,7 @@ footer {
 
 footer a {
     text-align: center;
-    font-size: .9em;
+    font-size: 1em;
     /* display: flex; */
     text-decoration: none;
     color: #0077B5;
@@ -313,6 +333,12 @@ h3, h4 {
 .footerMenu.retail-container h3 {
     /* width: 545px; */
     text-align: left;
+    /* padding-left: 15px; */
+}
+
+.footerMenu.retail-container {
+    /* width: 545px; */
+    /* text-align: left; */
     padding-left: 15px;
 }
 
@@ -321,17 +347,9 @@ h3, h4 {
     justify-content:space-between;
 }
 
-.retails {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* padding: 15px; */
-    /* padding-top: 15px; */
-    /* padding-right: 30px; */
-}
-
 .retails .retailLocations {
     /* padding: 0px 15px 0px 15px; */
-    padding: 15px;
+    padding: 0px 0px 15px 0px;
     text-align: left;
 }
 
@@ -342,8 +360,22 @@ h3, h4 {
 }
 
 .footerMenu h3 {
-    padding: 30px 0px 10px 0px;
+    padding: 30px 0px 15px 0px;
     /* color: white; */
+}
+
+.footerMenu h4 {
+    padding: 0px 0px 5px 0px;
+    /* color: white; */
+}
+
+
+
+.footerMenu.share-container {
+    /* width: 545px; */
+    text-align: right;
+    padding-right: 15px;
+
 }
 
 .share-links {
@@ -360,58 +392,112 @@ h3, h4 {
     /* color: white; */
 }
 
-.text-share {
-    padding-bottom: 8px;
+.text-share a {
+    padding: 0px 0px 0px 20px;
+    font-weight: 100;
+}
+
+.social-share a {
+    font-weight:100;
+    padding: 5px 0px 0px 20px;
 }
 
 .social-button {
-    color: white; /* Text color */
+    color: #0077B5;
     padding: 10px 20px; /* Padding inside the button */
     border: none; /* Removes the border */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center the text */
+    text-align: center;
     font-size: 20px; /* Font size */
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer; /* Pointer cursor on hover */
     display: inline-block; /* Keep it inline and allow padding/margin */
     font-family: Arial, sans-serif; /* Font family */
-    outline: none; /* Removes the grey outline */
 }
 
-.sms {
-    background-color: #32CD32; /* Twitter blue background */
+@media (max-width: 1200px) {
+    .social-button {
+        color: white; /* Text color */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 20px; /* Font size */
+        font-weight: 600;
+        letter-spacing: 1px;
+        cursor: pointer; /* Pointer cursor on hover */
+        display: inline-block; /* Keep it inline and allow padding/margin */
+        font-family: Arial, sans-serif; /* Font family */
+        outline: none; /* Removes the grey outline */
+    }
 
+    .text-share a {
+        padding: 10px 20px 10px 20px;
+        font-weight: 600;
+    }
+
+    .text-share a:hover {
+    text-decoration: none;
+    }
+
+    .sms {
+        /* background-color: #12df12; */
+        background-color: #0ec00e;
+        /* background-color: rgb(9, 149, 9); */
+    }
+
+    .sms:hover {
+        background-color: #0bab0b;
+    }
+
+    .whatsapp {
+        background-color: rgb(9, 149, 9);
+    }
+
+    .whatsapp:hover {
+        background-color: #158015;
+        /* background-color: #0eb50e; */
+    }
+
+    .social-share a {
+        font-weight:600;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .social-share a:hover {
+        text-decoration: none;
+    }
+
+    .facebook {
+        background-color: #1877F2;
+    }
+
+    .facebook:hover {
+        background-color: #1467d3;
+    }
+
+
+    .twitter {
+        background-color: #1DA1F2;
+    }
+
+    .twitter:hover {
+        background-color: #1584c9;
+    }
+
+    .linkedin {
+        background-color: #0077B5;
+    }
+
+    .linkedin:hover {
+        background-color: #00659c;
+    }
 }
-
-.whatsapp {
-    background-color: #25D366 ; /* Twitter blue background */
-}
-
-
-.linkedin {
-    background-color: #0077B5 ; /* Twitter blue background */
-
-}
-
-.facebook {
-    background-color: #1877F2; /* Twitter blue background */
-}
-
-.twitter {
-    background-color: #1DA1F2; /* Twitter blue background */
-}
-
-
 
 .sitemap {
-    padding: 40px 0px 20px 0px;
+    padding: 10px 0px 20px 0px;
 }
 
 .sitemap a {
     padding: 0px 10px 0px 10px;
 }
-
 
 @media (max-width: 1000px) {
     .container {
