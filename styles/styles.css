@@ -73,6 +73,7 @@ span > a {
     /* background-color: red; */
     align-content: center;
     /* padding-right: 20px; */
+
 }
 
 .container > .links > a {
@@ -81,6 +82,7 @@ span > a {
     font-weight:bold;
     /* color: darkblue; */
     color: var(--header-colour-selected);
+
 }
 
 @media (max-width: 1200px) {
@@ -95,6 +97,8 @@ span > a {
     .links {
         padding: 0px;
         font-size: 15px;
+        /* margin-bottom: 15px; */
+
         /* align-items: center; */
         text-align: center;
         /* display: flex; */
@@ -105,6 +109,7 @@ span > a {
         /* display: block; */
         padding: 10px;
         white-space: nowrap;
+        /* margin-bottom: 15px;  */
     }
 
     .logo {
@@ -320,9 +325,9 @@ h2, h3, h4 {
 .indexLocations iframe {
     margin: 0px 0px 10px 0px;
     border-radius: 20px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
     -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); */
 }
 
 
@@ -344,7 +349,8 @@ h2, h3, h4 {
     }
 
     .indexServices {
-        padding: 10px 0px 10px 0px;
+        /* padding: 10px 0px 10px 0px; */
+        padding: 20px;
     }
 
     .indexLocations-container {
@@ -362,9 +368,9 @@ h2, h3, h4 {
         max-width: 300px;
         border-radius: 30px;
         /* Horizontal offset, vertical offset, blur radius, color */
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+        /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
         -webkit-filter: drop-shadow(5px 5px 5px #222);
-        filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222); */
 
     }
 
@@ -377,8 +383,7 @@ h2, h3, h4 {
     .indexLocations-header {
         padding: 20px 0px 20px 0px;
         width: 100vw;
-        background-color:#d2efff;
-
+        background-color:#e6ffff;
     }
 
 }
@@ -414,11 +419,69 @@ h2, h3, h4 {
     /* padding-left: 30px; */
     margin-left: 30px;
     border-radius: 30px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+    /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
     -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); */
 }
 
+
+@media (max-width: 1200px) {
+    .response img {
+        /* max-width: 800px; */
+        /* padding-left: 30px; */
+        margin-left: 0px;
+        border-radius: 30px;
+    }
+
+    .serviceInfo {
+        padding: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .serviceInfo div img {
+        margin: 0px 0px 0px 0px;
+        /* padding: 0px 0px 0px 0px; */
+        /* padding: 20px; */
+        width: clamp(300px, 90vw, 1000px);
+    }
+
+    .response.image {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.products.response {
+    display: block;
+    padding: 20px;
+}
+
+.aboutInfo.response {
+    display: block;
+    padding: 20px;
+}
+
+.faqQA.response {
+    display: block;
+    padding: 20px;
+}
+
+.seasons.response {
+    display: block;
+    padding: 20px;
+}
+
+.seasons h3 {
+    color: var(--header-colour-selected);
+}
 
 .pitch {
     text-align: center;
@@ -434,6 +497,36 @@ h2, h3, h4 {
         text-align: left;
     }
 }
+
+
+/* Contact Page */
+@media (max-width: 1200px) {
+    .contactPageLocation iframe {
+        width: clamp(300px, 90vw, 1000px);
+    }
+
+    .contactPageLocation {
+        padding: 20px;
+    }
+}
+
+/* Guides Page */
+@media (max-width: 1200px) {
+    .youtube iframe {
+        padding: 20px;
+        width: clamp(300px, 90vw, 560px);
+
+    }
+
+    .youtube h2 {
+        text-align: center;
+    }
+
+
+
+
+}
+
 
 footer {
     text-align: center;
@@ -501,7 +594,6 @@ h3, h4 {
     /* width: 545px; */
     text-align: right;
     padding-right: 15px;
-
 }
 
 .share-links {
@@ -527,6 +619,41 @@ h3, h4 {
     font-weight:100;
     padding: 5px 0px 0px 20px;
 }
+
+
+@media (max-width: 1200px) {
+    .visitShare {
+        display: block;
+        text-align: center;
+    }
+
+    .retails .retailLocations {
+        /* padding: 0px 15px 0px 15px; */
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .footerMenu.retail-container h3 {
+        /* width: 545px; */
+        text-align: center;
+        /* padding-left: 15px; */
+    }
+
+    .footerMenu.retail-container {
+        text-align: center;
+    }
+
+    .footerMenu.share-container {
+        /* width: 545px; */
+        text-align: center;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .footerMenu.share-container h3 {
+        padding: 20px 0px 0px 0px;
+    }
+}
+
 
 .social-button {
     color: #0077B5;
