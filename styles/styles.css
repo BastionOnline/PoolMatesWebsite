@@ -322,12 +322,15 @@ h2, h3, h4 {
     margin: 0px 0px 5px 0px;
 }
 
-.indexLocations iframe {
-    margin: 0px 0px 10px 0px;
+iframe {
     border-radius: 20px;
     /* box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222); */
+}
+
+.indexLocations iframe {
+    margin: 0px 0px 10px 0px;
 }
 
 
@@ -507,15 +510,17 @@ h2, h3, h4 {
 }
 
 
+.contactPageLocation {
+    padding: 20px;
+}
+
+
 /* Contact Page */
 @media (max-width: 1200px) {
     .contactPageLocation iframe {
         width: clamp(300px, 90vw, 1000px);
     }
 
-    .contactPageLocation {
-        padding: 20px;
-    }
 }
 
 /* Guides Page */
@@ -523,16 +528,10 @@ h2, h3, h4 {
     .youtube iframe {
         padding: 20px;
         width: clamp(300px, 90vw, 560px);
-
     }
-
     .youtube h2 {
         text-align: center;
     }
-
-
-
-
 }
 
 
