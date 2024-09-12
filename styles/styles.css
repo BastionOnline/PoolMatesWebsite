@@ -452,6 +452,7 @@ iframe {
         font-size: 18px;
         padding: 20px;
         text-align: center;
+        margin: 0;
     }
 
 
@@ -507,6 +508,23 @@ iframe {
         align-items: center;
         text-align: left;
     }
+
+    .response h2 {
+        background-color: var(--header-colour-selected);
+        padding:10px;
+        /* width: 100vw; */
+        /* position: absolute; */
+        color: white;
+    }
+
+    .response h3 {
+        background-color: var(--header-colour-selected);
+        padding:10px;
+
+        color: white;
+        text-align: center;
+    }
+
 }
 
 
