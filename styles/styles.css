@@ -227,7 +227,12 @@ main {
             height: 40vh;
         }
     }
+
+    .logo-container{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     
+    }
     .overlay-text img {
     width: clamp(250px, 50vw, 600px);
     /* width: 500px; */
