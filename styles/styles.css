@@ -539,6 +539,14 @@ iframe {
 
 /* Services Page */
 
+.Featured-Content h3 {
+    color: #00103c;
+}
+
+.Featured-Content p {
+    font-size: 1.2rem;
+}
+
 .collage img {
     width: 400px;
     padding: 0px 0px 0px 0px;
@@ -547,6 +555,10 @@ iframe {
 
 .Customer-Favourites {
     padding-bottom: 20px;
+}
+
+.Customer-Favourites h3 {
+    color: #00103c;
 }
 
 .Customer-Favourites p {
@@ -569,9 +581,6 @@ iframe {
 }
 
 
-.Featured-Content p {
-    font-size: 1.2rem;
-}
 
 @media (max-width: 1200px) {
     .collage img {
