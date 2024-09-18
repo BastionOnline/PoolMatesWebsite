@@ -537,6 +537,56 @@ iframe {
 }
 
 
+/* Services Page */
+
+.collage img {
+    width: 400px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.Customer-Favourites {
+    padding-bottom: 20px;
+}
+
+.Customer-Favourites p {
+    font-size: 1.2rem;
+}
+
+.Customer-Favourites a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounded corners */
+    letter-spacing: 1px;
+    cursor: pointer; /* Pointer cursor on hover */
+    display: inline-block; /* Keep it inline and allow padding/margin */
+    font-family: Arial, sans-serif; /* Font family */
+    outline: none; /* Removes the grey outline */
+    background-color:#002076;
+}
+
+
+.Featured-Content p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+    .collage img {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .collage .img2, .collage .img3 {
+        display: none;
+    }
+
+}
+
 .contactPageLocation {
     padding: 20px;
 }
